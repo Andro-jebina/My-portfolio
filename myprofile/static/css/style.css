@@ -1,0 +1,41 @@
+body {
+  background-image: linear-gradient( to right top, #855988,#6B4984, #483475, #4c408e,  rgb(44, 24, 119),#855988);
+  color: white;
+  height: 100vh;
+  position:relative;
+}
+h1{
+    /* color: rgb(129, 129, 212); */
+    color: white;
+}
+
+.navss ul li a{
+  color: white;
+}
+
+.navss ul{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: end;
+  justify-content: space-around;
+  font-size: larger;
+}
+
+
+
+.star {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: whitesmoke;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: twinkle 2s infinite alternate;
+}
+
+/* Twinkling effect */
+@keyframes twinkle {
+    from { opacity: 0.2; transform: scale(0.8); }
+    to   { opacity: 1; transform: scale(1.2); }
+}
+
