@@ -34,31 +34,92 @@
     <div class="star" style="top:30%; left:24%;"></div>
     <div class="star" style="top:61%; left:55%;"></div>
     <div class="star" style="top:69%; left:59%;"></div>
+    <div class="star" style="top:99%; left:10%;"></div>
+    <div class="star" style="top:5%; left:4%;"></div>
+    <div class="star" style="top:4%; left:18%;"></div>
+    <div class="star" style="top:5%; left:92%;"></div>
+    <div class="star" style="top:0%; left:54%;"></div>
+    <div class="star" style="top:61%; left:55%;"></div>
+    <div class="star" style="top:69%; left:59%;"></div>
+
+    <div class="star-new" style="top:15%; left:72%;"></div>
+    <div class="star-new" style="top:30%; left:64%;"></div>
+    <div class="star-new" style="top:61%; left:95%;"></div>
+    <div class="star-new" style="top:69%; left:59%;"></div>
+    <div class="star-new" style="top:99%; left:80%;"></div>
+    <div class="star-new" style="top:5%; left:54%;"></div>
+    <div class="star-new" style="top:4%; left:88%;"></div>
+    <div class="star-new" style="top:5%; left:42%;"></div>
+    <div class="star-new" style="top:0%; left:84%;"></div>
+    <div class="star-new" style="top:61%; left:65%;"></div>
+    <div class="star-new" style="top:99%; left:99%;"></div>
+
+    <div class="star-dim" style="top:40%; left:34%;"></div>
+    <div class="star-dim" style="top:20%; left:5%;"></div>
+    <div class="star-dim" style="top:60%; left:7%;"></div>
+    <div class="star-dim" style="top:80%; left:90%;"></div>
+    <div class="star-dim" style="top:35%; left:25%;"></div>
+    <div class="star-dim" style="top:30%; left:8%;"></div>
+    <div class="star-dim" style="top:95%; left:22%;"></div>
+    <div class="star-dim" style="top:70%; left:4%;"></div>
+    <div class="star-dim" style="top:23%; left:5%;"></div>
+    <div class="star-dim" style="top:13%; left:99%;"></div>
+    <div class="star-dim" style="top:35%; left:25%;"></div>
+    <div class="star-dim" style="top:30%; left:58%;"></div>
+    <div class="star-dim" style="top:95%; left:42%;"></div>
+    <div class="star-dim" style="top:70%; left:84%;"></div>
+    <div class="star-dim" style="top:23%; left:35%;"></div>
+    <div class="star-dim" style="top:93%; left:99%;"></div>
 
 
     <div class="container">
         <div class="container-fluid navss">
-                <ul class="navbar-nav">
-                    <li class="nav-item" id="1">
-                        <a class="nav-link" href="#" style="text-decoration:none"><i class="bi bi-house-door"></i> Home</a>
-                    </li>
-                    <li class="nav-item" id="2">
-                        <a class="nav-link" href="#" style="text-decoration:none"><i class="bi bi-book"></i> Education</a>
-                    </li>
-                    <li class="nav-item" id="3">
-                        <a class="nav-link" href="#" style="text-decoration:none"><i class="bi bi-award"></i> Certificates</a>
-                    </li>
-                    <li class="nav-item" id="4">
-                        <a class="nav-link" href="#" style="text-decoration:none"><i class="bi bi-folder"></i> Projects</a>
-                    </li>
-                    <li class="nav-item" id="5">
-                        <a class="nav-link" href="#" style="text-decoration:none"><i class="bi bi-envelope"></i> Contact</a>
-                    </li>
-                </ul>
-            </div>
+            <ul class="navbar-nav">
+                <li class="nav-item " id="1">
+                    <a class="nav-link active" href="{% url 'index' %}" style="text-decoration:none"><i
+                            class="bi bi-house-door"></i> Home</a>
+                </li>
+                <li class="nav-item" id="2">
+                    <a class="nav-link" href="{% url 'education' %}" style="text-decoration:none"><i
+                            class="bi bi-book"></i>
+                        Education</a>
+                </li>
+                <li class="nav-item" id="3">
+                    <a class="nav-link" href="{% url 'certificate' %}" style="text-decoration:none"><i
+                            class="bi bi-award"></i>
+                        Certificates</a>
+                </li>
+                <li class="nav-item" id="4">
+                    <a class="nav-link" href="{% url 'project' %}" style="text-decoration:none"><i
+                            class="bi bi-folder"></i>
+                        Projects</a>
+                </li>
+                <li class="nav-item" id="5">
+                    <a class="nav-link" href="{% url 'contact' %}" style="text-decoration:none"><i
+                            class="bi bi-envelope"></i>
+                        Contact </a>
+                </li>
+            </ul>
         </div>
     </div>
-    <h1>hello</h1>
+    </div>
+
+    <div class="container content">
+        <div class="container box-1">
+            <br><br>
+            <h1> Hi,</h1> <span>I'm Andro Jerslin Jebina</span>
+            <h2> <br> passionate about Python Full-Stack Web Development.</h2>
+        </div>
+
+        <div class="container box-2">
+            <img src="{% static 'profile.jpg' %}" alt="My Profile" >
+
+        </div>
+    </div>
+    <!-- <div class="box">
+    <div class="bo1"> hello</div>
+    <div class="bo2">world</div>
+    </div> -->
 </body>
 
 </html>

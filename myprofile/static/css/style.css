@@ -14,23 +14,78 @@ h1{
 }
 
 .navss ul{
+  position: sticky;
   margin-top: 2rem;
   display: flex;
   justify-content: end;
   justify-content: space-around;
   font-size: larger;
+  list-style-type: none;
+}
+
+.nav-link.active{
+  font-weight: bolder;
+  color:gold;
 }
 
 
 
 .star {
     position: absolute;
-    width: 3px;
-    height: 3px;
-    background: whitesmoke;
-    border-radius: 50%;
+    width: 7px;
+    height: 8px;
+    background: goldenrod;
+    clip-path: polygon(
+    50% 0%, 
+    60% 40%,
+    100% 50%,
+    60% 60%,
+    50% 100%, 
+    40% 60%,
+    0% 50%,
+    40% 40%
+    );
     opacity: 0.8;
     animation: twinkle 2s infinite alternate;
+}
+
+.star-new{
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: rgb(229, 218, 181);
+  opacity: 50%;
+  animation: twinkle 2s infinite alternate;
+  clip-path: polygon(
+    50% 0%, 
+    60% 40%,
+    100% 50%,
+    60% 60%,
+    50% 100%, 
+    40% 60%,
+    0% 50%,
+    40% 40%
+    );
+}
+
+.star-dim{
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: rgb(228, 217, 154);
+  opacity: 50%;
+  animation: twinkle 2s infinite alternate;
+  /* transform: rotate(45deg); */
+  clip-path: polygon(
+    50% 0%, 
+    60% 40%,
+    100% 50%,
+    60% 60%,
+    50% 100%, 
+    40% 60%,
+    0% 50%,
+    40% 40%
+    );
 }
 
 /* Twinkling effect */
@@ -39,3 +94,49 @@ h1{
     to   { opacity: 1; transform: scale(1.2); }
 }
 
+.content {
+  background: rgba(245, 245, 220, 0.2); /* beige with 20% opacity */
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  height: 65%;
+  overflow: hidden;    
+}
+
+.content {
+  color: white;
+  padding: 5% 10% 0% 5% ;
+  display: flex;
+}
+
+span{
+  color: gold;
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+.bo1{
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+.bo2{
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+.box-2 img{
+  /* padding-left: 55%; */
+  border-radius: 50%;
+  margin-left: 25% ;
+  height: 300px;
+  width: 300px;
+  /* box-shadow: inset 40px 10px 5px #dea3e2 ; */
+box-shadow: 
+    -40px -20px 40px #dea3e2,   /* top-left red */
+    40px -20px 40px #855988,    /* top-right green */
+    -70px -20px 40px #6B4984,    /* bottom-left blue */
+    60px 50px 50px #4c408e;   /* bottom-right yellow */
+}
