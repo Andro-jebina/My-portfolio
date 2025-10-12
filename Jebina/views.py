@@ -7,8 +7,8 @@ def index(request):
 def education(request):
     return render(request,'education.html')
 
-def certificate(request):
-    return render(request,'certificate.html')
+def skill(request):
+    return render(request,'skill.html')
 
 def project(request):
     return render(request,'project.html')

@@ -28,8 +28,6 @@ h1{
   color:gold;
 }
 
-
-
 .star {
     position: absolute;
     width: 7px;
@@ -115,28 +113,117 @@ span{
   font-weight: bolder;
 }
 
-.bo1{
-  width: 100px;
-  height: 100px;
-  margin: 10px;
-}
-
-.bo2{
-  width: 100px;
-  height: 100px;
-  margin: 10px;
-}
-
 .box-2 img{
   /* padding-left: 55%; */
   border-radius: 50%;
   margin-left: 25% ;
   height: 300px;
   width: 300px;
-  /* box-shadow: inset 40px 10px 5px #dea3e2 ; */
+  border: 3px solid #6B4984;
+
 box-shadow: 
     -40px -20px 40px #dea3e2,   /* top-left red */
     40px -20px 40px #855988,    /* top-right green */
     -70px -20px 40px #6B4984,    /* bottom-left blue */
     60px 50px 50px #4c408e;   /* bottom-right yellow */
+}
+
+.box-2{
+  margin-left: 20%;
+  position: relative;
+  width: 250px;
+  height: 300px;
+  border-radius: 50%;
+  display: flex;
+  justify-content:end;
+  align-items:end;
+  background: radial-gradient(circle,#dea3e2 40%, transparent 70% );
+  animation: glowPluse 3s infinite ease-in-out;
+}
+
+.box-2::before,
+.box::after{
+  content: " ";
+  position: absolute;
+  border-radius: 50%;
+  width: 120%;
+  height: 120%;
+  top: -11%;
+  left: -8%;
+  border: 2px solid rgba(222, 163, 226, 0.5);
+  box-shadow: 
+    0 0 10px #dea3e2,
+    0 0 20px #855988,
+    0 0 30px white;
+  filter: blur(1px);
+  animation: uneven 4s infinite ease-in-out alternate;
+}
+
+.profile::after{
+  width: 140%;
+  height: 140%;
+  top: -20%;
+  left: -20%;
+  border: 2px solid rgba(133, 89, 136, 0.4);
+  box-shadow: 
+    0 0 15px #855988,
+    0 0 25px #dea3e2,
+    0 0 35px white;
+  animation-delay: 1s;
+}
+
+@keyframes uneven{
+  0%{transform: scale(1) rotate(0deg); opacity: 0.8;}
+  50%{transform: scale(1.05) rotate(2deg); opacity: 1;}
+  100%{transform: scale(1) rotate(-2deg); opacity: 0.8;} 
+}
+
+@keyframes glowPluse {
+  0%, 100%{box-shadow: 0 0 10px #dea3e2;}  
+  50%{box-shadow: 0 0 25px #855988;}
+}
+
+/* education css */
+
+
+.educa{
+  display: flex;
+}
+
+.edu-1,
+.edu-2,
+.edu-3{
+  display: grid ;
+  padding: 45px;
+  height: max-content;
+  width: max-content;
+  border: 1px solid white;
+  align-items: center;
+  text-align: center;
+  margin: 0.5%; /* top left bottom right */
+}
+
+.edu-1 h2, .edu-2 h2, .edu-3 h2{
+  margin: 0;
+  padding: 0;
+}
+
+.edu-3 .card-body img {
+   height: 80px !important;
+   width: 80px !important;
+   border-radius: 50%;
+   object-fit: cover;
+}
+
+.edu-1 span,
+.edu-2 span,
+.edu-3 span{
+  color: black;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+#rule{
+  width: 80%;
+  /* margin: 20px; */
 }
